@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Task4-1-A
+    
+var numbers = [];
+for (var i = 0; i < 10; i++) {
+  numbers.push(Math.floor(Math.random() * 10));
+}
+var evenSum = 0;
+for (var j = 0; j < numbers.length; j++) {
+  if (numbers[j] % 2 === 0) {
+    evenSum += numbers[j];
+  }
+}
+var lessThanFiveSum = 0;
+for (var k = 0; k < numbers.length; k++) {
+  if (numbers[k] < 5) {
+    lessThanFiveSum += numbers[k];
+  }
+}
+//
+document.writeln("number-matrix:", numbers);
+document.writeln("sum:", evenSum);
+document.writeln("sum:", lessThanFiveSum);
+//
+console.log("number-matrix:", numbers);
+console.log("sum:", evenSum);
+console.log("sum:", lessThanFiveSum);
+
+//Task4-1-B
+var user = {
+  name: "suzan",
+  number: "0981332442",
+  age: "24",
+  email: "suzanmerhij55@gmail.com"
+};
+//
+document.writeln(user);
+document.writeln("name:" + user.name);
+document.writeln("number:" + user.number);
+document.writeln("age:" + user.age);
+document.writeln("email:"+ user.email);
+//
+console.log(user);
+console.log("name:" + user.name);
+console.log("number:" + user.number);
+console.log("age:" + user.age);
+console.log("email:"+ user.email);
+</script>
+</body>
+</html>
